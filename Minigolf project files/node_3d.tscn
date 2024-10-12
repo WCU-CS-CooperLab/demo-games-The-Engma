@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwgbxfyqu65c5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_65tde"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(3.99978, -0.0332909, 0.0258998, 0.0332529, 3.99986, 0.00597454, -0.0259486, -0.00575889, 3.99991, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, -1.45064e-09, -4.65661e-10, -5.19321e-10, 1, 1.16415e-10, 0, 1.16415e-10, 1, 2.07361e-05, 4.60204e-06, -0.00319641)
+mesh = SubResource("BoxMesh_65tde")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.249999, 0.000404297, 0.000738692, -0.000616595, 0.237246, 0.0788285, -0.000573527, -0.0788299, 0.237246, -0.00547611, 1.19282, 2.3789)
+fov = 52.5026

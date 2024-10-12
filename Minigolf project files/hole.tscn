@@ -1,0 +1,71 @@
+[gd_scene load_steps=13 format=3 uid="uid://b23k6n61y0pi7"]
+
+[ext_resource type="MeshLibrary" uid="uid://g7rie4nh5rkf" path="res://assets/golf_tiles.tres" id="1_8wii0"]
+[ext_resource type="Script" path="res://hole.gd" id="1_k3d72"]
+[ext_resource type="PackedScene" uid="uid://c3jhweyspw6v" path="res://ball.tscn" id="2_708xy"]
+[ext_resource type="PackedScene" uid="uid://dlw7u8cevqy2k" path="res://ui.tscn" id="4_0mn0a"]
+[ext_resource type="Script" path="res://ui.gd" id="5_msy3d"]
+[ext_resource type="PackedScene" uid="uid://da7r0najqtp38" path="res://arrow.tscn" id="6_sdgfi"]
+[ext_resource type="PackedScene" uid="uid://btrsbcphf1ie" path="res://camera_gimbal.tscn" id="7_beujm"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lukh0"]
+sky_top_color = Color(0.25551, 0.41365, 0.840372, 1)
+sky_horizon_color = Color(0.946519, 0.533881, 0.195445, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_pgmjt"]
+sky_material = SubResource("ProceduralSkyMaterial_lukh0")
+
+[sub_resource type="Environment" id="Environment_emk5q"]
+background_mode = 2
+sky = SubResource("Sky_pgmjt")
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.5
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bad2k"]
+rough = true
+bounce = 0.5
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yj8qn"]
+height = 0.25
+radius = 0.08
+
+[node name="Hole" type="Node3D"]
+script = ExtResource("1_k3d72")
+
+[node name="Ball" parent="." instance=ExtResource("2_708xy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.844907, 1.78829, 1.83576)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_emk5q")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+directional_shadow_max_distance = 40.0
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_8wii0")
+physics_material = SubResource("PhysicsMaterial_bad2k")
+cell_size = Vector3(1, 1, 1)
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Tee" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.844907, 0.64796, 2.72802)
+
+[node name="UI" parent="." instance=ExtResource("4_0mn0a")]
+script = ExtResource("5_msy3d")
+
+[node name="Arrow" parent="." instance=ExtResource("6_sdgfi")]
+
+[node name="CameraGimbal" parent="." instance=ExtResource("7_beujm")]
+
+[node name="Hole" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hole"]
+shape = SubResource("CylinderShape3D_yj8qn")
+
+[connection signal="stopped" from="Ball" to="." method="_on_ball_stopped"]
+[connection signal="body_entered" from="Hole" to="." method="_on_hole_body_entered"]
