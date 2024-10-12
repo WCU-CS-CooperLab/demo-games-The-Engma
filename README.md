@@ -5,7 +5,7 @@ A template repository to publish games
 
 [Project 1 Phase 1](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/main/Project%20Phase%201/index.html)
 
-[Project 2 Phase 2](https://html-preview.github.io/?url=)
+[Project 2 Phase 2](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/Project-2/MiniGolf%20Base%20Finished/index.html)
 
 
 Attributions for the laser gun picture: <a href="https://www.freepik.com/free-photos-vectors/laser-sprite">Image by upklyak</a> on Freepik 
