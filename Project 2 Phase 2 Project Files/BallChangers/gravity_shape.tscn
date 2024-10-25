@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgokcdrg8laaq"]
+
+[ext_resource type="Script" path="res://BallChangers/gravity_shape.gd" id="1_xvlad"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_866b8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xk4mm"]
+albedo_color = Color(0.784303, 0, 0.123747, 1)
+emission_enabled = true
+emission = Color(0.780657, 0.00029367, 2.88785e-07, 1)
+emission_energy_multiplier = 15.38
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xa7kw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6g387"]
+
+[node name="GravShape" type="Area3D"]
+script = ExtResource("1_xvlad")
+
+[node name="Shape" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("BoxMesh_866b8")
+surface_material_override/0 = SubResource("StandardMaterial3D_xk4mm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("BoxShape3D_xa7kw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("BoxShape3D_6g387")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlw7u8cevqy2k"]
+
+[ext_resource type="FontFile" uid="uid://dlgkspckhvbp4" path="res://assets/Xolonium-Regular.ttf" id="1_fn47o"]
+[ext_resource type="Texture2D" uid="uid://dh0n8w1m6ms12" path="res://assets/bar_green.png" id="2_q74nk"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Message" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = -11.5
+offset_right = 39.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_fn47o")
+theme_override_font_sizes/font_size = 80
+text = "Get Ready"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Shots" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_fn47o")
+theme_override_font_sizes/font_size = 30
+text = "Shots: 0"
+
+[node name="PowerBar" type="TextureProgressBar" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+fill_mode = 3
+texture_progress = ExtResource("2_q74nk")
+
+[node name="PowerLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_fn47o")
+theme_override_font_sizes/font_size = 30
+text = "Power"

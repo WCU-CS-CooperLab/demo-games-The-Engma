@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqmfdvob0nhld"]
+
+[ext_resource type="Script" path="res://BallChangers/defult_shape.gd" id="1_rf7rp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y8ql4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xk4mm"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 15.38
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i3geb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3swcw"]
+
+[node name="DefultShape" type="Area3D"]
+script = ExtResource("1_rf7rp")
+
+[node name="Shape" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_y8ql4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xk4mm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_i3geb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_3swcw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,471 @@
+[gd_scene load_steps=18 format=3 uid="uid://bpipv2db1w11u"]
+
+[ext_resource type="PackedScene" uid="uid://b23k6n61y0pi7" path="res://hole.tscn" id="1_tajp3"]
+[ext_resource type="PackedScene" uid="uid://dcdu342otcwj8" path="res://Holes/hole_2.tscn" id="2_r3h0j"]
+[ext_resource type="PackedScene" uid="uid://bnru3bys2itqw" path="res://BallChangers/bouncy_shape.tscn" id="3_wwkqm"]
+[ext_resource type="PackedScene" uid="uid://cgokcdrg8laaq" path="res://BallChangers/gravity_shape.tscn" id="4_frare"]
+[ext_resource type="PackedScene" uid="uid://chdmwr1haq0fo" path="res://BallChangers/antigravity_shape.tscn" id="5_2qeru"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8vagd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ejmw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_edfsw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qkver"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g48eu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1r67d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l43ex"]
+albedo_color = Color(0.125911, 0.125911, 0.125911, 1)
+metallic = 1.0
+roughness = 0.16
+
+[sub_resource type="BoxMesh" id="BoxMesh_4wr8e"]
+material = SubResource("StandardMaterial3D_l43ex")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_v4n38"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_3wnm2"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_to1c7"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7ac13"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="Hole 1" instance=ExtResource("1_tajp3")]
+next_hole = ExtResource("2_r3h0j")
+
+[node name="GridMap" parent="." index="3"]
+data = {
+"cells": PackedInt32Array(65534, 65535, 20, 0, 65535, 655373, 65535, 65535, 655373, 2, 65535, 655373, 1, 65535, 655373, 3, 0, 655380, 3, 65535, 655380, 3, 2, 655365, 3, 1, 655380, 65534, 0, 20, 0, 0, 655373, 65535, 0, 655373, 65534, 1, 20, 65534, 2, 1048581, 65535, 2, 1048596, 0, 2, 1048596, 1, 1, 655373, 65535, 1, 655373, 0, 1, 655373, 1, 2, 1048596, 2, 2, 1048596, 2, 1, 655373, 2, 0, 655373, 1, 0, 655373, 3, 65527, 1441805, 2, 65527, 1441805, 1, 65527, 1441805, 0, 65527, 1441805, 65535, 65527, 1441805, 65534, 65527, 1441805, 65534, 65526, 1441805, 65535, 65526, 1441805, 0, 65526, 1441805, 0, 65525, 1441805, 1, 65525, 1441805, 2, 65525, 1441805, 2, 65526, 1441805, 3, 65526, 1441805, 1, 65526, 1441805, 65535, 65525, 1441805, 65534, 65525, 1441805, 1, 65524, 1441805, 2, 65524, 1441805, 3, 65524, 1441805, 3, 65525, 1441805, 0, 65524, 1441805, 65535, 65524, 1441805, 65534, 65524, 1441805, 65534, 65523, 1441805, 65535, 65523, 1441805, 0, 65523, 1441805, 1, 65523, 1441805, 2, 65523, 1441805, 3, 65523, 1441805, 3, 65522, 1441805, 2, 65522, 1441805, 1, 65522, 1441805, 65534, 65522, 1441805, 65535, 65522, 1441805, 0, 65522, 1441805, 65535, 65513, 1441805, 0, 65513, 13, 1, 65513, 1441805, 2, 65513, 1441805, 3, 65513, 1441805, 65534, 65513, 1441805, 3, 65512, 1441805, 2, 65512, 1441805, 1, 65512, 1441805, 0, 65512, 1441805, 65535, 65512, 1441805, 65534, 65512, 1441805, 65534, 65511, 1441805, 65534, 65510, 1441805, 65535, 65510, 1441805, 0, 65510, 1441805, 65535, 65511, 1441805, 0, 65511, 1441805, 1, 65510, 1441805, 2, 65510, 1441805, 3, 65510, 1441805, 3, 65511, 1441805, 2, 65511, 1441805, 1, 65511, 1441805, 65534, 65509, 1441805, 65534, 65508, 1441805, 65535, 65509, 1441805, 0, 65509, 1441805, 0, 65508, 1441805, 1, 65508, 1441805, 2, 65508, 1441805, 3, 65508, 1441805, 3, 65509, 1441805, 2, 65509, 1441805, 1, 65509, 1441805, 65535, 65508, 1441805, 3, 65528, 13, 2, 65528, 13, 1, 65528, 13, 0, 65528, 13, 65535, 65528, 13, 65534, 65528, 13, 65535, 65529, 13, 65534, 65529, 13, 0, 65529, 13, 1, 65529, 13, 3, 65529, 13, 2, 65529, 13, 65534, 65514, 13, 65534, 65515, 13, 65534, 65516, 13, 65534, 65517, 13, 65535, 65517, 13, 0, 65517, 13, 1, 65517, 13, 2, 65517, 13, 2, 65516, 13, 3, 65516, 13, 3, 65515, 13, 3, 65514, 13, 2, 65515, 13, 1, 65516, 13, 0, 65516, 13, 0, 65515, 13, 0, 65514, 13, 65535, 65516, 13, 65535, 65515, 13, 65535, 65514, 13, 1, 65514, 13, 2, 65514, 13, 1, 65515, 13, 3, 65517, 13)
+}
+metadata/_editor_floor_ = Vector3(0, -1, 0)
+
+[node name="Hole" parent="." index="8"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.50146, 0.467673, -6.4974)
+
+[node name="BouncyShape" parent="." index="9" instance=ExtResource("3_wwkqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.791183, 1.14875, -35.8332)
+
+[node name="Shape" parent="BouncyShape" index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("BoxMesh_8vagd")
+
+[node name="CollisionShape3D" parent="BouncyShape" index="1"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_7ejmw")
+
+[node name="CollisionShape3D" parent="BouncyShape/StaticBody3D" index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_edfsw")
+
+[node name="GravShape" parent="." index="10" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.44054, 3.9789, -40.5615)
+
+[node name="Shape" parent="GravShape" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape/StaticBody3D" index="0"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape2" parent="." index="11" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.71769, 1.45303, -55.262)
+
+[node name="Shape" parent="GravShape2" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape2" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="Wall" type="StaticBody3D" parent="." index="12"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall" index="0"]
+transform = Transform3D(1, 0, 0, 0, 15, 0, 0, 0, 50, -9.23108, 1.49058, -65.8206)
+mesh = SubResource("BoxMesh_4wr8e")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall" index="1"]
+transform = Transform3D(1, 0, 0, 0, 15, 0, 0, 0, 50, -9.23108, 1.49058, -65.8206)
+shape = SubResource("ConcavePolygonShape3D_v4n38")
+
+[node name="Wall2" type="StaticBody3D" parent="." index="13"]
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Wall2" index="0"]
+transform = Transform3D(21, 0, 0, 0, 1, 0, 0, 0, 50, 1.14924, -5.541, -65.4597)
+mesh = SubResource("BoxMesh_4wr8e")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall2" index="1"]
+transform = Transform3D(21, 0, 0, 0, 1, 0, 0, 0, 50, 1.14924, -5.541, -65.4597)
+shape = SubResource("ConcavePolygonShape3D_3wnm2")
+
+[node name="Wall3" type="StaticBody3D" parent="." index="14"]
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Wall3" index="0"]
+transform = Transform3D(21, 0, 0, 0, 1, 0, 0, 0, 50, 1.14924, 8.4823, -65.7996)
+mesh = SubResource("BoxMesh_4wr8e")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall3" index="1"]
+transform = Transform3D(21, 0, 0, 0, 1, 0, 0, 0, 50, 1.14924, 8.4823, -65.7996)
+shape = SubResource("ConcavePolygonShape3D_to1c7")
+
+[node name="Wall4" type="StaticBody3D" parent="." index="15"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Wall4" index="0"]
+transform = Transform3D(1, 0, 0, 0, 15, 0, 0, 0, 50, 11.7559, 1.49058, -65.6784)
+mesh = SubResource("BoxMesh_4wr8e")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall4" index="1"]
+transform = Transform3D(1, 0, 0, 0, 15, 0, 0, 0, 50, 11.7609, 1.49058, -65.7204)
+shape = SubResource("ConcavePolygonShape3D_7ac13")
+
+[node name="GravShape3" parent="." index="16" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.046659, 2.31626, -47.4926)
+
+[node name="Shape" parent="GravShape3" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape3" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape3/StaticBody3D" index="0"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape4" parent="." index="17" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.79545, 4.2585, -55.476)
+
+[node name="Shape" parent="GravShape4" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape4" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape4/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape5" parent="." index="18" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.77326, -0.856767, -39.6905)
+
+[node name="Shape" parent="GravShape5" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape5" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape5/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape6" parent="." index="19" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09942, 2.65167, -69.9082)
+
+[node name="Shape" parent="GravShape6" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape6" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape6/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape7" parent="." index="20" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.44054, 0.774913, -62.1757)
+
+[node name="Shape" parent="GravShape7" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape7" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape7/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape8" parent="." index="21" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.44054, 3.9789, -73.2471)
+
+[node name="Shape" parent="GravShape8" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape8" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape8/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape9" parent="." index="22" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71486, 1.17934, -69.749)
+
+[node name="Shape" parent="GravShape9" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape9" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape9/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape10" parent="." index="23" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.57782, 1.17934, -49.8971)
+
+[node name="Shape" parent="GravShape10" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape10" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape10/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape11" parent="." index="24" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.57782, 3.07086, -64.2973)
+
+[node name="Shape" parent="GravShape11" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape11" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape11/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape12" parent="." index="25" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.31608, -2.09839, -58.4782)
+
+[node name="Shape" parent="GravShape12" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape12" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape12/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape13" parent="." index="26" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1815, 6.02232, -49.8971)
+
+[node name="Shape" parent="GravShape13" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape13" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape13/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape14" parent="." index="27" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.65207, 1.17934, -51.771)
+
+[node name="Shape" parent="GravShape14" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape14" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape14/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape15" parent="." index="28" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.93676, 6.02232, -60.6488)
+
+[node name="Shape" parent="GravShape15" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape15" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape15/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape16" parent="." index="29" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.96533, 6.07599, -66.0033)
+
+[node name="Shape" parent="GravShape16" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape16" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape16/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape17" parent="." index="30" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1815, 2.81, -78.8034)
+
+[node name="Shape" parent="GravShape17" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape17" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape17/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape18" parent="." index="31" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.75892, -2.85972, -78.7863)
+
+[node name="Shape" parent="GravShape18" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape18" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape18/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape19" parent="." index="32" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.25579, 6.41991, -78.8034)
+
+[node name="Shape" parent="GravShape19" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape19" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape19/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape20" parent="." index="33" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.33523, 2.81, -78.8034)
+
+[node name="Shape" parent="GravShape20" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape20" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape20/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape21" parent="." index="34" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35692, 2.81, -78.8034)
+
+[node name="Shape" parent="GravShape21" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape21" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape21/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape22" parent="." index="35" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1815, 6.31598, -78.8034)
+
+[node name="Shape" parent="GravShape22" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape22" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape22/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape23" parent="." index="36" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.37068, 6.37169, -78.8034)
+
+[node name="Shape" parent="GravShape23" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape23" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape23/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape24" parent="." index="37" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1815, -2.91741, -78.8034)
+
+[node name="Shape" parent="GravShape24" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape24" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape24/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="GravShape25" parent="." index="38" instance=ExtResource("4_frare")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.83568, -3.03069, -78.8034)
+
+[node name="Shape" parent="GravShape25" index="0"]
+mesh = SubResource("BoxMesh_qkver")
+
+[node name="CollisionShape3D" parent="GravShape25" index="1"]
+shape = SubResource("BoxShape3D_g48eu")
+
+[node name="CollisionShape3D" parent="GravShape25/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0271909, 0.00593948, 0.00115585)
+shape = SubResource("BoxShape3D_1r67d")
+
+[node name="AnitGravityShape" parent="." index="39" instance=ExtResource("5_2qeru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.462687, 1.18814, -109.925)
+
+[node name="Goal" parent="." index="40"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 53.1223, -109.85)
+
+[node name="BouncyShape2" parent="." index="41" instance=ExtResource("3_wwkqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43413, -4.6479, -63.5578)
+
+[editable path="BouncyShape"]
+[editable path="GravShape"]
+[editable path="GravShape2"]
+[editable path="GravShape3"]
+[editable path="GravShape4"]
+[editable path="GravShape5"]
+[editable path="GravShape6"]
+[editable path="GravShape7"]
+[editable path="GravShape8"]
+[editable path="GravShape9"]
+[editable path="GravShape10"]
+[editable path="GravShape11"]
+[editable path="GravShape12"]
+[editable path="GravShape13"]
+[editable path="GravShape14"]
+[editable path="GravShape15"]
+[editable path="GravShape16"]
+[editable path="GravShape17"]
+[editable path="GravShape18"]
+[editable path="GravShape19"]
+[editable path="GravShape20"]
+[editable path="GravShape21"]
+[editable path="GravShape22"]
+[editable path="GravShape23"]
+[editable path="GravShape24"]
+[editable path="GravShape25"]
