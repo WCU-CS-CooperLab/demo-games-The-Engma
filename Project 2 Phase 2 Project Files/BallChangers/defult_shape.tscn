@@ -7,7 +7,6 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xk4mm"]
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 15.38
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i3geb"]
 

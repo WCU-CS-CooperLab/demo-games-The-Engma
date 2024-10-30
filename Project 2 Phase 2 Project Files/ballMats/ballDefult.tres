@@ -3,9 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c6bn4sm7gdfpx" path="res://assets/ball_normal_map.png" id="1_10402"]
 
 [resource]
-emission_enabled = true
 emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 16.0
 normal_enabled = true
 normal_scale = -1.0
 normal_texture = ExtResource("1_10402")

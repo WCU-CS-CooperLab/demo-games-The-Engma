@@ -1,12 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://bpipv2db1w11u"]
+[gd_scene load_steps=17 format=3 uid="uid://bpipv2db1w11u"]
 
 [ext_resource type="PackedScene" uid="uid://b23k6n61y0pi7" path="res://hole.tscn" id="1_tajp3"]
 [ext_resource type="PackedScene" uid="uid://dcdu342otcwj8" path="res://Holes/hole_2.tscn" id="2_r3h0j"]
 [ext_resource type="PackedScene" uid="uid://bnru3bys2itqw" path="res://BallChangers/bouncy_shape.tscn" id="3_wwkqm"]
 [ext_resource type="PackedScene" uid="uid://cgokcdrg8laaq" path="res://BallChangers/gravity_shape.tscn" id="4_frare"]
 [ext_resource type="PackedScene" uid="uid://chdmwr1haq0fo" path="res://BallChangers/antigravity_shape.tscn" id="5_2qeru"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_8vagd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7ejmw"]
 
@@ -21,7 +19,6 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l43ex"]
 albedo_color = Color(0.125911, 0.125911, 0.125911, 1)
 metallic = 1.0
-roughness = 0.16
 
 [sub_resource type="BoxMesh" id="BoxMesh_4wr8e"]
 material = SubResource("StandardMaterial3D_l43ex")
@@ -52,10 +49,6 @@ transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.50146, 0.467673, -6.4
 
 [node name="BouncyShape" parent="." index="9" instance=ExtResource("3_wwkqm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.791183, 1.14875, -35.8332)
-
-[node name="Shape" parent="BouncyShape" index="0"]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
-mesh = SubResource("BoxMesh_8vagd")
 
 [node name="CollisionShape3D" parent="BouncyShape" index="1"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

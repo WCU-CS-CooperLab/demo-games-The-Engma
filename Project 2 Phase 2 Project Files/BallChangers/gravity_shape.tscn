@@ -8,7 +8,6 @@
 albedo_color = Color(0.784303, 0, 0.123747, 1)
 emission_enabled = true
 emission = Color(0.780657, 0.00029367, 2.88785e-07, 1)
-emission_energy_multiplier = 15.38
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xa7kw"]
 

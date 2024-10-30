@@ -1,11 +1,10 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bmod8yhtqxqnj"]
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dkqwfqsmx6csi"]
 
 [ext_resource type="Texture2D" uid="uid://c6bn4sm7gdfpx" path="res://assets/ball_normal_map.png" id="1_r2uv8"]
 
 [resource]
-albedo_color = Color(0.556863, 0, 1, 1)
-emission_enabled = true
-emission = Color(0.556863, 0, 1, 1)
+albedo_color = Color(0.4, 0, 0.701961, 1)
+emission = Color(1, 0, 0, 1)
 emission_energy_multiplier = 16.0
 normal_enabled = true
 normal_scale = -1.0
