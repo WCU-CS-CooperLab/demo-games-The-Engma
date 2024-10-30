@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjly26p5we7lm"]
+
+[ext_resource type="Script" path="res://missile.gd" id="1_72p18"]
+[ext_resource type="Texture2D" uid="uid://boi1mqq0nvnje" path="res://assets/maverick.png" id="2_cfrmj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsgto"]
+size = Vector2(105.002, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_114lg"]
+size = Vector2(7.87399, 26.1232)
+
+[sub_resource type="Curve" id="Curve_8sphq"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.197026), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_oc1s7"]
+offsets = PackedFloat32Array(0, 0.694444)
+colors = PackedColorArray(0.995468, 0.456133, 7.70092e-07, 1, 1, 0, 0, 1)
+
+[node name="Missile" type="Area2D"]
+script = ExtResource("1_72p18")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(6.39335, 3.44904)
+texture = ExtResource("2_cfrmj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21, 0)
+rotation = -3.14159
+scale = Vector2(0.457136, -0.486487)
+shape = SubResource("RectangleShape2D_jsgto")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(26, 0)
+rotation = -3.14159
+scale = Vector2(0.508001, -0.995283)
+shape = SubResource("RectangleShape2D_114lg")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(21, 0)
+scale = Vector2(2.21347, 0.659999)
+
+[node name="Exhaust" type="CPUParticles2D" parent="."]
+show_behind_parent = true
+position = Vector2(-8, 0)
+rotation = 3.14159
+amount = 25
+lifetime = 0.1
+local_coords = true
+emission_shape = 3
+emission_rect_extents = Vector2(5, 5)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_max = 400.0
+scale_amount_max = 8.0
+scale_amount_curve = SubResource("Curve_8sphq")
+color_ramp = SubResource("Gradient_oc1s7")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

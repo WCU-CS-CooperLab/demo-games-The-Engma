@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://bigbsbpyvoke0"]
+
+[ext_resource type="Script" path="res://power_up.gd" id="1_kmjsh"]
+[ext_resource type="Texture2D" uid="uid://bn7kns7mtsfap" path="res://assets/power up.png" id="2_55onp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ntnb3"]
+radius = 23.3922
+height = 48.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1n3ik"]
+radius = 5.65686
+height = 32.5269
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f8as"]
+size = Vector2(5.5, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pj2q"]
+size = Vector2(17, 9)
+
+[node name="PowerUp" type="Area2D"]
+script = ExtResource("1_kmjsh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_55onp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -6)
+rotation = -3.14159
+scale = Vector2(1.66722, -0.561399)
+shape = SubResource("CapsuleShape2D_ntnb3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-29, 6)
+rotation = 0.785398
+shape = SubResource("CapsuleShape2D_1n3ik")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-14.75, 6.5)
+shape = SubResource("RectangleShape2D_1f8as")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(-31.5, -15)
+shape = SubResource("RectangleShape2D_3pj2q")
+
+[node name="LifeTime" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="LifeTime" to="." method="_on_life_time_timeout"]

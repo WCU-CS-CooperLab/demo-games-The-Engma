@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://y303bn53xwfs"]
+
+[ext_resource type="Script" path="res://bad_rock.gd" id="1_sigh2"]
+[ext_resource type="Texture2D" uid="uid://c0on7ld7ixiy" path="res://assets/bad_rock.png" id="2_21r11"]
+[ext_resource type="PackedScene" uid="uid://b6dc0p2535h3v" path="res://explosion.tscn" id="3_jfcj6"]
+
+[node name="BadRock" type="RigidBody2D" groups=["bad_rocks"]]
+linear_damp_mode = 1
+angular_damp_mode = 1
+script = ExtResource("1_sigh2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_21r11")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Explosion" parent="." instance=ExtResource("3_jfcj6")]
+visible = false
