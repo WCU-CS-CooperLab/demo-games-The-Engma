@@ -28,7 +28,8 @@ White block: The white block returns the balls physics back to normal when the b
 
 Element 3: Space Theme
 The game is called Space Golf, and the skybox has been changed to a copyright free picture from NASA.
-The ball and special blocks have emissions turned on to make the game feel more futuristic.
+Special blocks have emissions turned on to make the game feel more futuristic.
+It also helps them stand out more.
 The golf course tiles themselves have not been changed. It is still golf afterall.
 
 Element 4: Title Screen: There is now a title screen that allows for repeat playthroughs when finishing the game.
