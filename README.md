@@ -1,10 +1,6 @@
 # GamePublish
 A template repository to publish games
 
-[Player Scene #1](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/main/Player%20Scene/index.html)
-
-[Project Phase 1](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/main/Project%20Phase%201/index.html)
-
 [Project 3 Phase 1](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/Project-3/Project%203%20Phase%201/Index.html)
 
 [Proect 3 Phase 2](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/Project-3/Project%203%20Phase%202/Index.html)
