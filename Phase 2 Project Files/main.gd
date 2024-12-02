@@ -47,9 +47,9 @@ func _on_rock_exploded(size, radius, pos, vel):
 		spawn_rock(size - 1, newpos, newvel)
 		
 func spawnBoss():
-	var b = boss_scene.instantiate()
-	add_child(b)
-	b.target = $player
+	var e = enemy_scene.instantiate()
+	add_child.call_deferred(e)
+	e.target = $player
 		
 func new_game():
 	# remove any old rocks from previous game

@@ -42,7 +42,7 @@ func explode():
 		if spawnChance == 1:
 			var p = power_up.instantiate()
 			p.position = position
-			get_tree().root.add_child(p)
+			get_tree().root.add_child.call_deferred(p)
 		await $Explosion/AnimationPlayer.animation_finished
 		queue_free()
 	else:
@@ -52,6 +52,6 @@ func explode():
 		if spawnChance == 1:
 			var p = power_up.instantiate()
 			p.position = position
-			get_tree().root.add_child(p)
+			get_tree().root.add_child.call_deferred(p)
 		await $Explosion/AnimationPlayer.animation_finished
 		queue_free()

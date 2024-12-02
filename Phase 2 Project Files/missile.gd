@@ -19,7 +19,7 @@ func _on_body_entered(body):
 	if body.is_in_group("rocks") or body.is_in_group("bad_rocks"):
 		var a = explosion_area_scene.instantiate()
 		a.position = position
-		get_tree().root.add_child(a)
+		get_tree().root.add_child.call_deferred(a)
 		queue_free()
 		
 func _on_area_entered(area):
