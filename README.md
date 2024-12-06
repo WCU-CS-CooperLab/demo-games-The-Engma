@@ -30,5 +30,3 @@ Added Bad Ring (red ring)
 The bad ring takes away points and fuel depending on how close to the center the player gets.
 The closer to the center of the ring, the more points and fuel the player looses.
 If the player's controlls are inverted, the player recieves one third of the point and fuel loss.
-
-Attributions for the laser gun picture: <a href="https://www.freepik.com/free-photos-vectors/laser-sprite">Image by upklyak</a> on Freepik 
