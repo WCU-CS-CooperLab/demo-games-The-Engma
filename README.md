@@ -12,6 +12,8 @@ Project 1
 
 [Project 1 Phase 2](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/Project-1/Phase%202/Index.html)
 
+Read the write up for project 1 here: https://github.com/WCU-CS-CooperLab/gamedev-workbench-The-Engma/blob/main/Write%20Ups/Project%201%20Write%20Up
+
 
 Project 2
 
