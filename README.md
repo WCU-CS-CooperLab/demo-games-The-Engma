@@ -17,6 +17,7 @@ Read the write up for project 1 here: https://github.com/WCU-CS-CooperLab/gamede
 Attributions for the laser gun picture: <a href="https://www.freepik.com/free-photos-vectors/laser-sprite">Image by upklyak</a> on Freepik 
 
 
+
 Project 2
 
 [Project 2 Phase 1](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/Project-2/Project%202%20Phase%201/index.html)
