@@ -35,6 +35,7 @@ Read the write up for project 3 here: https://github.com/WCU-CS-CooperLab/gamede
 
 
 In Class Games
+
 [Coin Dash](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/main/Coin%20Dash/index.html)
 
 [Space Rocks](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/Project-1/Phase%201/Index.html)
