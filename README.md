@@ -43,7 +43,7 @@ Project 4
 
 There are a few odditites with this project. Once someone playes a round of the quiz game, the server seems to die. It will require a restart.
 In addition, the Mac client may not work. I do not have a Mac to test that with. Also, press the up and down arrows to toggle chat.
-If all else fails, the source code can be found here.
+If all else fails, the source code can be found here. (https://github.com/The-Engma/GameDevQuizClient/tree/main/Christmas%20Quiz)
 
 In Class Games
 
