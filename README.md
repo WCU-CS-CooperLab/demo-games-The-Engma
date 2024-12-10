@@ -36,6 +36,15 @@ Project 3
 Read the write up for project 3 here: https://github.com/WCU-CS-CooperLab/gamedev-workbench-The-Engma/new/main/Write%20Ups
 
 
+Project 4
+[Windows Client](https://github.com/The-Engma/GameDevQuizClient/raw/refs/heads/main/ChristmasQuizWindowsClient.zip?download=)
+
+[Mac Client](https://github.com/The-Engma/GameDevQuizClient/raw/refs/heads/main/christmas_quiz_mac_client.zip?download=)
+
+There are a few odditites with this project. Once someone playes a round of the quiz game, the server seems to die. It will require a restart.
+In addition, the Mac client may not work. I do not have a Mac to test that with. Also, press the up and down arrows to toggle chat.
+If all else fails, the source code can be found here.
+
 In Class Games
 
 [Coin Dash](https://html-preview.github.io/?url=https://github.com/WCU-CS-CooperLab/demo-games-The-Engma/blob/main/Coin%20Dash/index.html)
